@@ -1,0 +1,355 @@
+/********************************************************************* 
+  FILE     : green.css
+  
+  ABSTRACT : This file defines BLUE colors for the web pages.
+  
+  VERSIONS : 1.0  18 Dec 2002  Svetoslav Nikolov
+						Created the style sheet using the "green.css"
+						as a template.
+ **********************************************************************/
+ 
+BODY{
+	background-color: #f6f6f0;
+	color: #232311;
+   font-size: 12px; 
+	margin: 0 0 0 0; 
+	padding: 0 0 0 0;
+   font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+     color: #232311;
+     font-size: 21px; 
+     font-family: Arial, Helvetica, sans-serif; 
+     font-weight: bold;  
+     margin-top:0px;  
+     margin-bottom:10px}
+	  
+/* Ordinary header 2 */
+h2 {
+     color: #232311; 
+     font-size: 17px; 
+     font-family: Arial, Helvetica, sans-serif; 
+     font-weight: bold;
+     margin-top:5px;  
+     margin-bottom:0px}
+	  
+/* Ordinary header 3 */
+h3 {
+     color: #232311; 
+     font-size: 14px; 
+     font-family: Arial, Helvetica, sans-serif  ; 
+     font-weight: bold;  
+     margin-top:5px;  
+     margin-bottom:0px}
+	  
+/* Header content */
+h4 {
+     color: #232311; 
+     font-size: 13px; 
+     font-family: Arial, Helvetica, sans-serif  ;  
+     font-weight: normal;  
+     margin-top:0px;  
+     margin-bottom:0px}
+	  
+/* Image text */     
+h5 {
+     color: #000000; 
+     font-size: 12px; 
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: normal;  
+     margin-top:3px;
+     margin-bottom:4px}
+	  
+p,address {
+     color: #000000; 
+     font-style: normal; 
+     font-size: 12px; 
+     font-family: Arial, Helvetica, sans-serif; 
+     margin-top:0px;  
+     margin-bottom:10px}
+	  
+a {
+     color: #232311; 
+     text-decoration: underline}
+
+a:hover{
+    color : #000000
+}	  
+
+
+ul,ol,li {
+     color: #000000; 
+     font-size: 12px; 
+     font-family: Arial, Helvetica, sans-serif}
+	  
+small {
+     color: #000000; 
+     font-family: Arial, Helvetica, sans-serif}
+a.small {
+     color: #232311; 
+     font-size: 12px; 
+     font-family: Arial, Helvetica, sans-serif}
+	  
+/* Ordinary header 1 */
+h1.tbox {
+     color: #ffffff; 
+     font-size: 21px; 
+     font-family: Arial, Helvetica, sans-serif; 
+     font-weight: bold;  
+     margin-top:0px;  
+     margin-bottom:10px}
+
+/* Ordinary header 2 */
+h2.tbox {
+     color: #ffffff; 
+     font-size: 17px; 
+     font-family: Arial, Helvetica, sans-serif; 
+     font-weight: bold;
+     margin-top:5px;  
+     margin-bottom:0px}
+
+/* Ordinary header 3 */
+h3.tbox {
+     color: #ffffff; 
+     font-size: 14px; 
+     font-family: Arial, Helvetica, sans-serif  ; 
+     font-weight: bold;  
+     margin-top:5px;  
+     margin-bottom:0px}
+
+/* Header content */
+h4.tbox {
+     color: #ffffff; 
+     font-size: 13px; 
+     font-family: Arial, Helvetica, sans-serif  ;  
+     font-weight: normal;  
+     margin-top:0px;  
+     margin-bottom:0px}
+
+/* Image text */     
+h5.tbox {
+     color: #ffffff; 
+     font-size: 12px; 
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: normal;  
+     margin-top:3px;
+     margin-bottom:4px}
+p.tbox,address.tbox {
+     color: #ffffff; 
+     font-style: normal; 
+     font-size: 14px; 
+     font-family: Arial, Helvetica, sans-serif; 
+     margin-top:0px;  
+     margin-bottom:10px}
+a.tbox:hover,a.tbox:link,a.tbox:visited,a.tbox:active {
+     color: #ffffff; 
+     text-decoration: underline}
+ul.tbox,ol.tbox,li.tbox {
+     color: #ffffff; 
+     font-size: 14px; 
+     font-family: Arial, Helvetica, sans-serif}
+     
+table.main {
+     border-color: #b5b5b0;
+     border-style: solid;
+     }
+
+table{
+	font-size: 12px;
+	color: #000000;
+}
+
+table.border, td.border, tr.border{
+	border-color: #d7d7d2;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #858580;
+	font-size: 12px;
+	color: #101005;
+}
+
+
+.upper,   .bottommenu{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     color: #252520;
+     background-color: #d7d7d2; 
+     text-decoration: none
+	  }
+	  
+
+.leftmenu, .topmenu{ 
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 12px;
+     color: #ffffff;
+     background-color: #ebebe6; 
+     text-decoration: none}
+
+.navigation{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   color: #113366;
+   text-decoration: none
+ }
+
+.current{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+	font-weight:bold;
+   color: #151510;
+   text-decoration: none
+ }
+ 
+.contents{
+	color: #000000;
+	background-color: #fffff9; 
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial,  Helvetica, sans-serif;
+	text-align: left;
+	}
+a.contents:link,a.contents:visited {
+     font-weight: normal;
+     color: #232311}
+a.contents:hover {
+     color: #232311; 
+	  text-decoration: underline}
+a.contents:active {
+     font-weight: normal;
+     color: #232311}
+	
+b.navigation {
+     font-size: 15px;
+     color: #ffffff}
+a.navigation:link,a.navigation:visited {
+     font-weight: normal;
+     color: #252520}
+a.navigation:hover {
+     color: #252520; 
+     font-weight: bold}
+a.navigation:active {
+     font-weight: normal;
+     color: #252520}
+.banner {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     color: #252520;
+     background-color: #d7d7d2; 
+     text-decoration: none}
+a.banner:link,a.banner:visited {
+     color: #252520;
+	  text-decoration: underline}
+a.banner:hover {
+     color: #252520;
+	  text-decoration: underline}
+a.banner:active {
+     color: #252520}
+	  
+.banner2 {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     background-color: #b5b5b0; 
+     color: #000000;
+     text-decoration: none}
+a.banner2:link,a.banner2:visited {
+     color: #ffffff}
+a.banner2:hover {
+     color: #ffffff;
+     font-weight: bold}
+a.banner2:active {
+     color: #ffffff}
+.banner3 {
+     background-color: #b5b5b0; 
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 30px;
+     color: #ffffff;
+     text-decoration: none}
+p.banner3 {
+     color: #ffffff}
+a.banner3:link,a.banner3:visited {
+     color: #ffffff}
+a.banner3:hover {
+     color: #ffffff; 
+     font-weight: bold}
+a.banner3:active {
+     color: #ffffff}
+.footer {
+     font-family: Arial, Helvetica, sans-serif; 
+     font-size: 12px; 
+     background-color: #b5b5b0; 
+     color: #ffffff}
+a.footer:link,a.footer:visited {
+     color: #252520}
+a.footer:hover {
+     color: #252520;
+     font-weight: bold}
+a.footer:active {
+     color: #252520}
+
+.printer { 
+     color: #000000;
+     background-color: #ffffff; 
+	  font-size: 12px;
+	  font-family: Arial,  Helvetica, sans-serif;
+	  text-align: left;
+     text-decoration: none}
+
+     
+.plain { 
+     color: #000000;
+     background-color: #fffff9; 
+     text-decoration: none}
+
+/* Overskrift which seems to be used in Bulletin only */
+
+.overskrift {
+     font-family: Arial, Helvetica, sans-serif; 
+     font-size: 14px; 
+     color: #232311}
+a.overskrift:active,a.overskrift:hover,a.overskrift:link,a.overskrift:visited {
+     color: #232311}
+
+.strongtext {
+     color: #232311; 
+     font-weight: bold; 
+     font-size: 14px; 
+     font-family: Arial, Helvetica, sans-serif}
+
+/* Old styles which will be deleted when they are not used any more */
+
+.header1 {
+	color: #232311; 
+     background-color: #fafafa; 
+	font-size: 21px; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-weight: bold}
+.header2 {
+	color: #232311; 
+     background-color: #fafafa; 
+	font-size: 17px; 
+	font-family: Arial, Helvetica, 
+	sans-serif; font-weight: bold}
+.header3 {
+	color: #232311; 
+     background-color: #fafafa; 
+	font-size: 14px; 
+	font-family: Arial, Helvetica, 
+	sans-serif; font-weight: bold}
+.header4 {
+	color: #ffffff; 
+     background-color: #fafafa; 
+	font-size: 23px; 
+	font-family: Arial, Helvetica, 
+	sans-serif; font-weight: bold}
+.headercontent {
+	color: #232311; 
+     background-color: #fafafa; 
+	font-size: 13px; 
+	font-family: Arial, Helvetica, sans-serif}
+.imagetext {
+	color: #000000; 
+      background-color: #fafafa; 
+	font-size: 12px; 
+	font-family: Arial, Helvetica, sans-serif}
+
