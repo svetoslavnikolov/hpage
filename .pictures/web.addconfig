@@ -1,0 +1,7 @@
+<?
+set_style('lila.css');
+add_image('upperleft', '.pictures/decoration_ul_magenta.gif', 'Decoration');
+add_image('upperright', '.pictures/dtu_logo_ur_magenta.png', 'Technical University of Denmark','http://www.dtu.dk');
+add_image('middleright', '.pictures/hpage_logo_magenta.png', 'Home Page Generator');
+add_image('menu_line', '.pictures/line_magenta.gif','Line');
+?>
