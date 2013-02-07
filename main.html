@@ -1,0 +1,90 @@
+<!--
+ Welcoming message for the web page of HPaGe -
+ Home Page Generator.
+ Verion: 1.0, 1 Nov 2002, Svetoslav Nikolov
+-->
+
+<h2>H-PaGe - Home Page Generator.<br>Version C.</h2>
+<p><br>
+
+
+<b>NEW - </b> <a href="http://www.oersted.dtu.dk/personal/mho/">Mikkel Holm Olsen</a> has contributed a green color scheme and
+image creation for the <a href="http://www.oersted.dtu.dk/au/">automation department</a>.
+
+<p><br>
+
+<table width="100%" class="border" cellpadding="10"><tr><td class="contents">
+<h3>Showing your publications</h3>
+<p><br>
+
+The easiest way to show your publications is to use 
+the following file: <a href="publications.php.txt">publications.php</a><br>
+<p><br>
+This is how you do it:
+<ol>
+  <li>Download the file publications.php. Remember to set the extension ".php", not ".txt".</li>
+  <li>Add a link in the menu to this file:
+<pre>
+add_menu('left', 'Publications', 'directory/', 'publications.php');
+</pre>
+  </li>
+  
+  <li> Finally, replace the first argument in the call to <tt>pubdb_page()</tt> from 12 to the 
+    your own ID number.
+  </li>
+</ol>
+
+</td>
+</tr>
+</table>
+
+
+<p><br>
+
+Welcome to the small web site of H-PaGe, which
+is short from <b>H</b>ome
+<b>Pa</b>ge <b>Ge</b>nerator. HPaGe was
+designed with only one thoght in mind - create
+web pages like this as easily as possible.
+The whole layout of the page is created
+by a single script "index.php". The only
+thing that the user must do is to provide
+a single file, called "main.html" which is the
+actual contents of the page.
+
+<p> The menu on the left side of the
+page can be created either from a
+specification given in a file,
+or from the directory structure.
+
+You can get a presentation of H-PaGe:
+<ul>
+	<li>PDF, 1 slide per page,    [<a href="presentation/hpage_1spp.pdf">HTTP</a>] </li>
+	<li>PDF, 6 slides per page,   [<a href="presentation/hpage_6spp.pdf">HTTP</a>]</li>
+	<li>Power Point presentation, [<a href="presentation/hpage.ppt">HTTP</a>]</li>
+</ul>
+
+<p>The best way to learn how to use H-PaGe is to take a look
+at the  <a href="?doc/">user guide</a>;
+
+<p>
+
+
+<table>
+<tr><td height=120 valign="bottom">
+   <p>
+      <a href="http://validator.w3.org/check/referer"><img border="0"
+          src="http://www.w3.org/Icons/valid-html401"
+          alt="Valid HTML 4.01!" height="31" width="88"></a>
+	  
+
+ 		<a href="http://jigsaw.w3.org/css-validator/">
+		  <img style="border:0;width:88px;height:31px"
+      	 src="http://jigsaw.w3.org/css-validator/images/vcss" 
+	       alt="Valid CSS!">
+ 		</a>
+	</p>
+<p>&copy 2002-2003, Svetoslav Nikolov   
+&lt;<a href="mailto:<sn@oersted.dtu.dk>">sn@oersted.dtu.dk</a>&gt;
+</td></tr>
+</table>  

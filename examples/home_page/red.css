@@ -1,0 +1,345 @@
+/********************************************************************* 
+  FILE     : red.css
+  
+  ABSTRACT : This file defines REDISH colors for the web pages.
+  
+  VERSIONS : 1.0  18 Dec 2002  Svetoslav Nikolov
+					
+
+ **********************************************************************/
+
+BODY{
+	background-color: #8c1f14;
+	color: #ddddaa;
+   font-size: 12px; 
+   font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+     color: #8c1f14; 
+     font-size: 21px; 
+     font-family: Arial, Helvetica, sans-serif; 
+     font-weight: bold;  
+     margin-top:0px;  
+     margin-bottom:10px}
+	  
+/* Ordinary header 2 */
+h2 {
+     color: #8c1f14; 
+     font-size: 17px; 
+     font-family: Arial, Helvetica, sans-serif; 
+     font-weight: bold;
+     margin-top:5px;  
+     margin-bottom:0px}
+	  
+/* Ordinary header 3 */
+h3 {
+     color: #8c1f14; 
+     font-size: 14px; 
+     font-family: Arial, Helvetica, sans-serif  ; 
+     font-weight: bold;  
+     margin-top:5px;  
+     margin-bottom:0px}
+	  
+/* Header content */
+h4 {
+     color: #8c1f14; 
+     font-size: 13px; 
+     font-family: Arial, Helvetica, sans-serif  ;  
+     font-weight: normal;  
+     margin-top:0px;  
+     margin-bottom:0px}
+/* Image text */     
+h5 {
+     color: #000000; 
+     font-size: 12px; 
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: normal;  
+     margin-top:3px;
+     margin-bottom:4px}
+p,address {
+     color: #000000; 
+     font-style: normal; 
+     font-size: 12px; 
+     font-family: Arial, Helvetica, sans-serif; 
+     margin-top:0px;  
+     margin-bottom:10px}
+a {
+     color: #8c1f14; 
+     text-decoration: underline}
+	  
+
+a:hover{
+    color: #000000
+}
+
+ul,ol,li {
+     color: #000000; 
+     font-size: 12px; 
+     font-family: Arial, Helvetica, sans-serif}
+	  
+small {
+     color: #000000; 
+     font-family: Arial, Helvetica, sans-serif}
+a.small {
+     color: #8c1f14; 
+     font-size: 12px; 
+     font-family: Arial, Helvetica, sans-serif}
+	  
+/* Ordinary header 1 */
+h1.tbox {
+     color: #ffffff; 
+     font-size: 21px; 
+     font-family: Arial, Helvetica, sans-serif; 
+     font-weight: bold;  
+     margin-top:0px;  
+     margin-bottom:10px}
+/* Ordinary header 2 */
+h2.tbox {
+     color: #ffffff; 
+     font-size: 17px; 
+     font-family: Arial, Helvetica, sans-serif; 
+     font-weight: bold;
+     margin-top:5px;  
+     margin-bottom:0px}
+/* Ordinary header 3 */
+h3.tbox {
+     color: #ffffff; 
+     font-size: 14px; 
+     font-family: Arial, Helvetica, sans-serif  ; 
+     font-weight: bold;  
+     margin-top:5px;  
+     margin-bottom:0px}
+/* Header content */
+h4.tbox {
+     color: #ffffff; 
+     font-size: 13px; 
+     font-family: Arial, Helvetica, sans-serif  ;  
+     font-weight: normal;  
+     margin-top:0px;  
+     margin-bottom:0px}
+/* Image text */     
+h5.tbox {
+     color: #ffffff; 
+     font-size: 12px; 
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: normal;  
+     margin-top:3px;
+     margin-bottom:4px}
+p.tbox,address.tbox {
+     color: #ffffff; 
+     font-style: normal; 
+     font-size: 14px; 
+     font-family: Arial, Helvetica, sans-serif; 
+     margin-top:0px;  
+     margin-bottom:10px}
+a.tbox:hover,a.tbox:link,a.tbox:visited,a.tbox:active {
+     color: #ffffff; 
+     text-decoration: underline}
+ul.tbox,ol.tbox,li.tbox {
+     color: #ffffff; 
+     font-size: 14px; 
+     font-family: Arial, Helvetica, sans-serif}
+
+table{
+	font-size: 12px;
+	color: #000000;
+}
+     
+table.main {
+     border-color: #c84538;
+     border-style: solid;
+     }
+
+table.border{
+	border-color: #c84538;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #c84538;
+	font-size: 12px;
+	color: #ffffaa;
+}
+
+
+.upper, .bottommenu{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     color: #ffffff;
+     background-color: #c84538; 
+     text-decoration: none
+	  }
+	  
+
+.topmenu, .leftmenu { 
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 12px;
+     color: #ffffff;
+     background-color: #8c1f14; 
+     text-decoration: none}
+
+.navigation{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   color: #ffffff;
+   text-decoration: none
+ }
+ 
+ .current{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+	font-weight:bold;
+   color: #ffff44;
+   text-decoration: none
+ }
+
+.contents{
+	color: #000000;
+	background-color: #ebebeb; 
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial,  Helvetica, sans-serif;
+	text-align: left;
+	}
+a.contents:link,a.contents:visited {
+     font-weight: normal;
+     color: #8c1f14}
+a.contents:hover {
+     color: #8c1f14; 
+	  text-decoration: underline}
+a.contents:active {
+     font-weight: normal;
+     color: #8c1f14}
+	
+b.navigation {
+     font-size: 15px;
+     color: #ffffff}
+a.navigation:link,a.navigation:visited {
+     font-weight: normal;
+     color: #ffffff}
+a.navigation:hover {
+     color: #ffffff; 
+     font-weight: bold}
+a.navigation:active {
+     font-weight: normal;
+     color: #ffffff}
+.banner {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     color: #ffffff;
+     background-color: #c84538; 
+     text-decoration: none}
+a.banner:link,a.banner:visited {
+     color: #ffffff}
+a.banner:hover {
+     color: #ffffff;
+     font-weight: bold}
+a.banner:active {
+     color: #ffffff}
+.banner2 {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     background-color: #c84538; 
+     color: #ffffff;
+     text-decoration: none}
+a.banner2:link,a.banner2:visited {
+     color: #ffffff}
+a.banner2:hover {
+     color: #ffffff;
+     font-weight: bold}
+a.banner2:active {
+     color: #ffffff}
+.banner3 {
+     background-color: #c84538; 
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 30px;
+     color: #ffffff;
+     text-decoration: none}
+p.banner3 {
+     color: #ffffff}
+a.banner3:link,a.banner3:visited {
+     color: #ffffff}
+a.banner3:hover {
+     color: #ffffff; 
+     font-weight: bold}
+a.banner3:active {
+     color: #ffffff}
+.footer {
+     font-family: Arial, Helvetica, sans-serif; 
+     font-size: 12px; 
+     background-color: #c84538; 
+     color: #ffffff}
+a.footer:link,a.footer:visited {
+     color: #ffffff}
+a.footer:hover {
+     color: #ffffff;
+     font-weight: bold}
+a.footer:active {
+     color: #ffffff}
+
+.printer { 
+     color: #000000;
+     background-color: #ffffff; 
+	  font-size: 12px;
+	  font-family: Arial,  Helvetica, sans-serif;
+	  text-align: left;
+     text-decoration: none}
+
+     
+.plain { 
+     color: #000000;
+     background-color: #cccccc; 
+     text-decoration: none}
+
+/* Overskrift which seems to be used in Bulletin only */
+
+.overskrift {
+     font-family: Arial, Helvetica, sans-serif; 
+     font-size: 14px; 
+     color: #8c1f14}
+a.overskrift:active,a.overskrift:hover,a.overskrift:link,a.overskrift:visited {
+     color: #8c1f14}
+
+.strongtext {
+     color: #8c1f14; 
+     font-weight: bold; 
+     font-size: 14px; 
+     font-family: Arial, Helvetica, sans-serif}
+
+/* Old styles which will be deleted when they are not used any more */
+
+.header1 {
+	color: #8c1f14; 
+     background-color: #ebebeb; 
+	font-size: 21px; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-weight: bold}
+.header2 {
+	color: #8c1f14; 
+     background-color: #ebebeb; 
+	font-size: 17px; 
+	font-family: Arial, Helvetica, 
+	sans-serif; font-weight: bold}
+.header3 {
+	color: #8c1f14; 
+     background-color: #ebebeb; 
+	font-size: 14px; 
+	font-family: Arial, Helvetica, 
+	sans-serif; font-weight: bold}
+.header4 {
+	color: #ffffff; 
+     background-color: #ebebeb; 
+	font-size: 23px; 
+	font-family: Arial, Helvetica, 
+	sans-serif; font-weight: bold}
+.headercontent {
+	color: #8c1f14; 
+     background-color: #ebebeb; 
+	font-size: 13px; 
+	font-family: Arial, Helvetica, sans-serif}
+.imagetext {
+	color: #000000; 
+      background-color: #ebebeb; 
+	font-size: 12px; 
+	font-family: Arial, Helvetica, sans-serif}
+
+ 

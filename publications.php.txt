@@ -1,0 +1,6 @@
+<?
+   pubdb_page(12, "all", all , "Publications");
+?>
+
+<p><br>
+

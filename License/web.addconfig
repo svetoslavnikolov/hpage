@@ -1,0 +1,7 @@
+<?
+ add_image('upperleft', '.pictures/decoration_ul_brown.gif', 'Decoration');
+ add_image('upperright', '.pictures/dtu_logo_ur_brown.png', 'Technical University of Denmark','http://www.dtu.dk');
+ add_image('middleright', '.pictures/hpage_logo_brown.png','H-PaGe');
+ add_image('menu_line','.pictures/line_brown.gif','Line');
+ set_style('../styles/brown.css');
+?>

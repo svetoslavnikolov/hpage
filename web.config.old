@@ -1,0 +1,133 @@
+<?
+# 
+#  Menu definitions.
+#       +------------+--------------------------------------+
+#       |            |                                      |
+#       +------------+--------------------------------------+
+#       |            |   top                                |
+#       +------------+--------------------------------------+
+#       | left       |                                      |
+#       |            |                                      |
+#       |            |                                      |
+#       +------------+--------------------------------------+
+#       |            |   bottom                             |
+#       +------------+--------------------------------------+
+# 
+
+# add_menu('position', 'name', 'place', 'content');
+#   add_left_submenu('level', 'name', 'place', 'content');
+
+# set_substitute('true') Some characters from the 'name' will be replaced with others
+# Here is the substitution table:
+#    '*' - &#8226;
+#    '_' - <br>
+
+set_substitute('true');
+add_menu('top', 'Svetoslavs_Page', 'http://www.oersted.dtu.dk/personal/sn/');
+add_menu('top', 'Ørsted*DTU', 'http://www.oersted.dtu.dk');
+add_menu('top', 'ES Section', 'http://www.es.oersted.dtu.dk');
+add_menu('top', 'Campus Net', 'http://www.campusnet.dtu.dk');
+
+
+add_menu('left', "User's Guide", './doc');
+add_menu('left', 'Used Pictures', './.pictures');
+add_menu('left', 'Used Files', './', 'files.html');
+add_menu('left', 'Example Home Page','examples/home_page');
+add_menu('left','','');
+add_menu('left','License','License');
+add_menu('left','Revision History', './','revision_history');
+add_menu('left','Version A_(Old Version)','http://www.es.oersted.dtu.dk/~sn/HPaGe');
+
+add_menu('left','','');
+add_menu('left', 'Create<br>Upper Right Image', './create_logos', 'upperright_image.html');
+add_menu('left', 'Create<br>Middle Right Image', './create_logos', 'middleright_image.html');
+
+add_menu('left','','');
+add_menu('left','Download<br>Program','http://www.oersted.dtu.dk/personal/sn/hpage/hpage.tar.gz');
+add_menu('left','Download<br>Documentation','http://www.oersted.dtu.dk/personal/sn/hpage/doc.tar.gz');
+add_menu('left', 'Download Example<br>Home Page', 'http://www.oersted.dtu.dk/personal/sn/hpage/examples_home_page.tar.gz');
+
+
+add_menu('bottom', 'Ørsted*DTU', 'http://www.oersted.dtu.dk');
+add_menu('bottom', 'ES Section', 'http://www.es.oersted.dtu.dk');
+add_menu('bottom', 'Campus Net', 'http://www.campusnet.dtu.dk');
+add_menu('bottom', 'Web Mail', 'http://www3.es.oersted.dtu.dk/webmail/src/login.php');
+add_menu('bottom', 'Center for Fast<br>Ultrasound Imaging', 'http://www.es.oersted.dtu.dk/bme/cfu');
+
+
+
+
+# add_bottom_text('HTML text'); 
+# Print the text 'HTML text' on the bottom of the page instead of a  bottom menu.
+
+# add_bottom_text('This page is maintained by Svetoslav Nikolov');
+
+
+
+# 
+#	This file defines the pictures shown in the web page.
+#	The web page can be divided into the following regions:
+#	
+#	+------------+--------------------------------------+
+#	| upperleft  |    upperright                        |
+#	+------------+--------------------------------------+
+#	| middleleft |    middleright                       |
+#	+------------+--------------------------------------+
+#	|            |                                      |
+#	|            |                                      |
+#	|            |                                      |
+#	+------------+--------------------------------------+
+#	| lowerleft  |                                      |
+#	+------------+--------------------------------------+
+#	
+#	The variables with extension "_alt" contain the 
+#	text which is displayed instead of the picture.
+#	
+#	The variables with extension "_link" contain eventual links.
+#	
+#	bordercolor - specifies the color of the table border
+#	border - specifies what type of border is present
+#	menu_line1 - specifies the picture for the lines in the menu.
+#
+# 
+ 
+# add_image('position', 'file', 'description', 'link', 'alternative text');
+
+ add_image('upperleft', '.pictures/decoration_ul_green.gif', 'Decoration');
+ add_image('upperright', '.pictures/dtu_logo_ur_green.png', 'Technical University of Denmark','http://www.dtu.dk');
+ add_image('middleleft', '.pictures/picture_ml_tu.jpg', 'TU Sofia');
+ add_image('middleright', '.pictures/hpage_logo_green.png', 'Home Page Generator');
+ add_image('lowerleft', '.pictures/picture_ll.jpg', 'PCB');
+ add_image('menu_line','.pictures/line_green.gif','Line');
+
+# giving a name for the menu_line image
+
+
+ 
+#set_style('style name or file);
+#     Choose a file which contains the style sheet with
+#     the definition of the colors
+set_style('green.css');
+
+
+# set_title('Title Name')
+#      Sets the title of the whole site. If you want a separate
+#      title for each of the pages from the menu, do not use
+#      this function. Instead, in each of the ".HTML" files
+#      use the HTML tags <head><title>Name</title></head>
+
+set_title('H-PaGe - Home Page Generator');
+
+
+#  show_updated('true') or show_updated('false')
+#       if "show_updated" is called with a parameter 'true', then the last update
+#       time is shown. If the function is not called at all, or called with a parameter
+#       'false', then the last update date is not shown.
+
+show_updated('true');
+
+
+# set_home_text('text') changes the default text "Home" which is used
+# to denote the "Home" of the web site.
+set_home_text('H-PaGe Home');
+?>

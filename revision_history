@@ -1,0 +1,144 @@
+<pre>
+People involved in the project :
+----------------------------------------------------------------------
+   Svetoslav Nikolov  - SN,  sn@oersted.dtu.dk
+   Jørgen A. Jensen   - JAJ, jaj@oersted.dtu.dk
+   Claus Sørensen     - CS,  cs@oersted.dtu.dk
+   Mogens Y. Pedersen - MYP, myp@oersted.dtu.dk
+   Allan Jørgensen    - AJ,  aj@oersted.dtu.dk
+   Henrik Laursen     - HL,  hl@oersted.dtu.dk
+   
+
+
+REVISION HISTORY:
+----------------------------------------------------------------------
+(1) Revision A, June 2002, SN.
+    Full functionality. Setup parameters in different files.
+    
+(2) Revision B, 29 Nov 2002, CS
+    Menu items and picture definitions from a single file "web.config"
+    as suggested by JAJ
+    
+(3) Revision B-1 29 Nov 2002, SN
+   (3.1) Fixed problem with two "Home" entries.
+   (3.2) Fixed problem with the line bw items
+   (3.3) Decoupled the "navigation" class from the 
+         "menu, leftmenu, and bottommenu".
+         The "navigation" does not contain information
+         about the "background color". This is because
+         one risks to have links with dark colors
+         over a light background.
+         
+   (3.4) Now the cascaded style sheets have the following
+         names:
+         topmenu - For the top part of the menu
+         leftmenu - For the left part of the menu 
+         bottomenu - For the bottom menu
+         banner - For the text on the bottom
+         contents - For the text shown in the "contents" part
+                    of the page.
+                             
+         the outer table has a new CSS - "border".
+         
+   (3.5) The sub-menus created from the directory 
+         structure have the correct position of lines.
+         
+   (3.6) Added a new type of picture in "web.config"
+       add_image('menu_line','groenlinje.gif','Line');
+       This for the line displayed between two menu items.
+       
+       
+(4) Revision B-2, 9 Dec 2002 SN
+   (4.1) Corrected the CSS style sheet. Now the colors
+         of the background can be changed from CSS.
+   (4.2) Removed the borders in the pictures when linking.
+
+   (4.3) Changed the behaviour of the function "add_menu".
+         Now the function differentiates between
+         absolute web addresses and realitve addresses.
+         In the case of a relative address, the 
+         arguments to "index.php" are automatically
+         appended.
+         
+      NOW THE PROGRAM  WORKS AS IN VERSION A
+      
+(5) Revision B-3, 16 Dec 2002, SN
+   (5.1) Fixed the problem with the space below the 
+         pictures. (extra new line in the forming of the
+         link in the function "add_image()")
+   
+   (5.2) Fixed a problem with the extra white border 
+         at the edges. Problem was debugged by MYP.
+         
+   (5.3) Suggestion by Allan Jørgensen for no-lines when
+         menus are separated is implemented.   
+   (5.4) Fixed the problem with topics in the top and bottom menus.
+   
+   (5.5) Added "Printer Friendly Version"
+
+(6) Revision B-4, 17 Dec 2002, AJ, SN
+    (6.1) SN fixed a potential problem with titles.
+   
+    (6.2) AJ added a function for replacing characters with 
+          special characters in the menu names. This feature
+          is controlled from "web.config" with the function
+          set_sub('true' | 'false');
+    (6.3) If there is no upper-right image, then the title
+          of the page is printed instead.
+         
+(7) Revision B-5, 18 Dec 2002,  SN
+    (7.1) Added "Last Updated text"
+    (7.2) Modifications to the BODY part of the CSS. 
+          Font-family, size, color.
+    (7.3) Wrote a utility for making the titles using PHP
+    (7.4) New function "show_updated()" in "web.config"
+    (7.5) Added the possibility for a "bottom text", 
+          which appears instead of the bottom menu.
+    (7.6) Added automatic printing from the left menu.
+    (7.7) Added "web.addconfig" allowing to have different
+          setting for different $item(s)
+
+(8) Revision B-6, 19 Dec 2002, SN
+    (8.1) Now if the menu specifies a path to a directory, in which
+          there is a "index.php", the address which is formed is 
+          a full address to that PHP script.
+          
+(9)  Revision B-7 03 Jan 2003, SN
+     (9.1) The script now detects Netscape 4.x. In this case, the outer
+           most table has a borderwidth of "1".
+     (9.2) Fixed a problem for the display of a horizontal menu. In 
+           Netscape 4.x, the default value for a table border is "1".
+           Now it is explicitly set to 0.
+      
+(10) Revision B-8 07 Jan 2003, SN
+     (10.1) Modified the CSS files. Now the links change their 
+            color when the cursor moves over them. 
+            The following CSS styles exist:
+            red.css, green.css, blue.css, 
+            lila.css, brown.css, cyan.css
+     (10.2) Added support for "*.txt" files. If a "main.txt" 
+            exists, or the topic refers to a ".txt" file, 
+            then the contents of  that file is read within a 
+            pair of "&lt;pre&gt;" and "&lt;/pre&gt;" tags.
+   
+
+(11) Revision B-9 14 Jan 2003, SN
+     (11.1) Added support for global paths, starting with "~/"
+     (11.2) Added forms for creating an Upper- and Middle- Right images.
+ 
+(12) Revision B-10 15 Jan 2003, SN
+     (12.1) Added a new command called "set_home_text()" which 
+	         changes the text in the "Home link".
+      
+(13) Revision B-11 15 Jan 2003, SN
+     (13.1) Text files are parsed for HTML tags.
+     (13.2) Fixed CSS styles for normal TABLES.
+		
+(14) Revision B-12 19 Jan 2003, SN
+	(14.1) Added support for sub-menus.
+	
+(15) Revision B-13 21 Jan 2003, SN
+	(15.1) Bug fixes in the sub-menus functions. 
+	
+    
+ </pre>

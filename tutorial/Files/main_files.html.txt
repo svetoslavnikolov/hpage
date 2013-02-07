@@ -1,0 +1,18 @@
+<h1>Files used in this tutorial</h1>
+
+In order to download files, click with
+the right mouse button on [Download], and choose
+"Save Target As ... "
+
+<ol>
+<li>
+   /tutorial/main.html &nbsp; [<a href="files/main_tutorial.html.txt"> Download </a>] &nbsp; [<a href="?files/main_tutorial.view.html.txt"> view </a>]
+</li>
+<li>
+   /tutorial/pictures/main.html &nbsp; [<a href="files/main_pictures.html.txt"> Download </a>] &nbsp; [<a href="?files/main_pictures.html.txt"> view </a>]
+</li>
+<li>
+   /tutorial/files/main.html &nbsp; [<a href="files/main_files.html.txt"> Download </a>] &nbsp; [<a href="?files/main_files.view.html.txt"> view </a>]
+</li>
+
+</ol>

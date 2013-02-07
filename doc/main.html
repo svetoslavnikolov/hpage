@@ -1,0 +1,515 @@
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<META NAME="GENERATOR" CONTENT="TtH 2.64">
+                                                                               
+
+<title> Short User's Guide to H-PaGe (Home Page Generator)</title>
+ 
+<H1 align="center">Short User's Guide to H-PaGe </H1>
+<H3 align=center>Svetoslav Nikolov </H3>
+
+<H3 align=center>Ørsted<font face=symbol>·</font
+>DTU </H3>
+
+
+<a href="doc/user_guide.pdf"> <img valign="center" border="" src="/personal/sn/.pictures/pdf.png"> User's Giude  in PDF</a>
+
+
+<p>
+        <H2><A NAME="tth_sEc1">
+1</A>&nbsp;&nbsp;Introduction</H2>
+This is a short User's Guide for the <b><font face="helvetica">H</font></b>ome <b><font face="helvetica">Pa</font></b>ge <b><font face="helvetica">Ge</font></b>nerator
+(<b><font face="helvetica">H-PaGe</font></b>, pronounced Eit<font face=symbol>ò</font
+> Peidzh).
+<font face="helvetica">H-PaGe</font>is a program which generates automatically
+web pages from a given specification, which look
+like the web pages of DTU. The user provides
+only the <em>content</em> of the page, and the layout
+is created by <font face="helvetica">H-PaGe</font>. Thus, if the outer appearance
+of the web site changes, the user can update his/her
+web site without changing anything from his/her
+files. This will be done automatically by <font face="helvetica">H-PaGe</font>.
+The program was initially written to provide
+a fast and easy way of creating and maintaining
+web pages. Then some additional features have
+been added to the program to make it more
+flexible and usable.  Section 
+shows how to quickly and easy create  a web page.
+
+<p>
+        <H2><A NAME="tth_sEc2">
+2</A>&nbsp;&nbsp;Quick Start</H2>
+
+      <H3><A NAME="tth_sEc2.1">
+2.1</A>&nbsp;&nbsp;Creating a ``simple'' page</H3>
+<A NAME="sec: quick_start">
+</A>
+
+<p><A NAME="tth_fIg1">
+</A> 
+
+<center>
+<p>
+<a href="doc/.figures/page_parts.pdf">Figure</a> <center>      Figure 1: <A NAME="fig: page_parts">
+</A> Layout of the page generated
+by <font face="helvetica">H-PaGe</font>.</center>
+</center>
+<p>
+<p><font face="helvetica">H-PaGe</font>&nbsp; creates pages like the one shown in Fig.&nbsp;<A href="#fig: page_parts">1</A>.
+In order to create such a page, follow these steps:
+
+<OL type="1">
+
+<li> Copy the file (<tt>index.php</tt>) to the directory which
+      is going to be the <em>root</em> directory of your
+      web site. The file  is a small
+      program written in PHP, which is executed by
+      the web server. The output of the
+      program is an HTML code for the page you will see  in
+      your browser. Changing  will change
+      the layout of the web page.
+
+<p>
+
+<li> Copy the file  to the same directory.
+      This file contains the names of the pictures which
+      will appear in the web page. Presently it
+      is necessary to provide names for at least
+      4 pictures - upper-left, upper-right, middle-left,
+      and middle-right (see Fig.&nbsp;<A href="#fig: page_parts">1</A>).
+
+<p>
+
+<li> Create a file with a name . This
+file should be either a simple text file, or a simple
+HTML file. The contents of this file will appear in
+the middle row, on the left of the web page (the
+one designated as ``Contents'' in Fig.&nbsp;<A href="#fig: page_parts">1</A>).
+</OL>
+<p>
+      <H3><A NAME="tth_sEc2.2">
+2.2</A>&nbsp;&nbsp;Playing With The Menus</H3>
+<A NAME="sec: menus">
+</A>
+Consider again Fig.&nbsp;<A href="#fig: page_parts">1</A>.
+Presently there are 3 menus, which are supported by
+<font face="helvetica">H-PaGe</font>- left, top, and bottom menus. The top
+and the bottom menus are optional. You can
+choose either to have such menus, or not.
+The left menu, however will always be present.
+There are two ways of adding menu items
+to the left menu: (a) using the directory
+structure, and (b) using the file .
+
+<p>
+       <H4><A NAME="tth_sEc2.2.1">
+2.2.1</A>&nbsp;&nbsp;Adding menu items to the left menu</H4>
+The first way to add new items to the left menu
+is to create new directories. For example,
+let's assume that the file  is
+placed in the directory .
+If now you create the following subdirectories of :
+
+<blockquote>
+
+<pre>
+Introduction
+Test
+.pictures
+</pre>
+</blockquote>
+<p>
+you will get two menu items in the left menu: <em><u>Test</u></em> and
+<em><u>Introduction</u></em>. Directories, whose names start with
+a <em>dot</em> will be ``<em>hidden</em>''.
+Now, if you want to add some contents for these
+two menu items, you must create two files 
+in , and , respectively.
+When you click on the menu item <em><u>Test</u></em>, then
+the program will display the contents of the
+file .
+If you want to add sub-menu items to the
+menu items, then you must create sub-sub-directories
+of the sub-directories. There is no limit
+for the number of levels of sub-directories.
+The recursion will, however, be stopped
+if there is a file  in
+some of the sub-directories. This way
+of adding contents to your web site is
+the simplest.
+
+<p>
+There is also another possibility for controlling
+the contents of the menus - by changing the
+file 
+
+<p>
+       <H4><A NAME="tth_sEc2.2.2">
+2.2.2</A>&nbsp;&nbsp;Changing the menus from web.config</H4>
+It is possible to control the contents of
+all of the menus from the file .
+The syntax of the command is:
+
+<blockquote>
+
+<pre>
+add_menu('position', 'name', 'place', 'content');
+</pre>
+</blockquote>
+<p>
+where  specifies to which menu
+an item is being added, and can be one of ,
+, . Notice that the
+quotes () are obligatory. So is the
+semicolon () at the end of the line.
+The second argument  is the
+text that will appear on the screen. This can
+be any valid HTML text. The third argument 
+is the link itself. If  begins
+with ``'', this means that the place is
+an absolute Internet address. Otherwise, it is assumed
+to be the name of a directory.  The last argument
+ is optional.  It is used only
+if  specifies a sub-directory.  The
+default value of  is .
+Let's consider the following example.
+We have created the two subdirectories
+, and , and
+we have the following file structure:
+
+<pre>
+test/main.html
+Introduction/main.html
+Introduction/intro.html
+Test/main.html
+Test/test.html
+</pre>
+We can add items to the left menu using the following
+commands:
+
+<pre>
+add_menu('left','Main&lt;br&#62;Introduction', './Introduction');          # Line 1
+add_menu('left','Some&lt;br&#62;Introduction', './Introduction','intro');  # Line 2
+add_menu('left',"Test's test",'./Test');                            # Line 3
+add_menu('left','&lt;font color=yellow&#62;Yellow&lt;br&#62;Test&lt;/font&#62;','./Test','test.html');
+add_menu('left','DTU','http://www.dtu.dk');                         # Line 5
+
+</pre>
+Several features have been demonstrated above.
+You can have comments in your configuration. The comments
+start with the letter  and end with the end of line.
+You can use double quotes () for the text, if you
+have to use the single () quotes in the text. You can
+use HTML tags to format your text. For example ( &lt; br &gt; )
+breaks the line. The example on line 4, shows how you can even
+change the color of a single link.
+
+<p>
+The link defined in line 1 will point to the file: 
+( is the default file to be displayed).
+The link in line 2 will point to the file .
+The script automatically checks for files ,
+ and . Line 5 shows how
+an absolute link is provided - placing  in front of
+the name.
+
+<p>
+Adding menu items to the top and bottom menus is done
+in exactly the same way- just replacing the first
+argument from  to  or ,
+respectively. If you do not add any items to the top and
+bottom menus, they will not appear on the web page.
+If you do not add any items to the left menu using
+the command , then the items
+will be taken from the directory structure.
+
+<p>
+      <H3><A NAME="tth_sEc2.3">
+2.3</A>&nbsp;&nbsp;Changing the pictures</H3>
+<A NAME="sec: pictures">
+</A>
+
+<p>
+Presently, there are at least 4 pictures
+on the DTU web pages: upper-left, upper-right,
+middle-left and middle-right (see Fig.&nbsp;<A href="#fig: page_parts">1</A>).
+Optionally you can specify a bottom-left picture.
+Adding the pictures to the page is done again
+from the file  using the command:
+
+<blockquote>
+
+<pre>
+add_image('position', 'file', 'description', 'link');
+</pre>
+</blockquote>
+<p>
+The first argument  is a string and
+can take the following values: ,
+, , ,
+, and . The special picture
+ is used for the line between the
+items of the left menu. The second argument 
+contains the path to the picture. The path is
+given relative to the <em>root</em> directory (the directory in
+which  is placed).  is
+a description of the picture. It is also shown
+instead of the picture, if the picture cannot be displayed.
+The last parameter  is optional.
+If it exists, then the picture is used also as a link.
+The link must be a full Internet address.
+
+<p>
+The sizes of the pictures is as follows:
+
+<UL>
+
+<li> Upper-left  : 151 &times; 20 pixels.
+
+<li> Upper-right : 600 &times; 20 pixels.
+
+<li> Middle-left : 151 &times; 72 pixels.
+
+<li> Middle-right: 600 &times; 72 pixels.
+
+<li> Bottom-left : 151 &times; 72 pixels.
+</UL>
+<p>
+<em>It is important that the images have
+exactly this size, else a white spacing will
+be added around them.
+</em>
+
+<p>
+      <H3><A NAME="tth_sEc2.4">
+2.4</A>&nbsp;&nbsp;Setting the title of the page</H3>
+<A NAME="sec: title">
+</A>
+You can set a title for the web site using
+the command:
+
+<blockquote>
+
+<pre>
+set_title('text');
+</pre>
+</blockquote>
+<p>
+If you do not specify a middle-right image, then
+the  for the title will be shown instead of
+the middle-right picture.
+
+<p>
+      <H3><A NAME="tth_sEc2.5">
+2.5</A>&nbsp;&nbsp;Adding a text at the bottom of the page</H3>
+<A NAME="sec: add_text">
+</A>
+
+<p>
+If you do not have a menu at the bottom of the page,
+then you can have add a text at the bottom of the page
+with the command <tt>add_bottom_text</tt>. For example:
+
+<blockquote>
+
+<pre>
+add_bottom_text('This page is maintained by &lt;b&#62;Svetoslav Nikolov&lt;/b&#62;');
+</pre>
+</blockquote>
+<p>
+      <H3><A NAME="tth_sEc2.6">
+2.6</A>&nbsp;&nbsp;Last updated ...</H3>
+If you want to show when a page was last
+updated you can call the command <tt>show_updated</tt>
+with a parameter <tt>'true'</tt>:
+
+<blockquote>
+
+<pre>
+show_updated('true');
+</pre>
+</blockquote>
+<p>
+      <H3><A NAME="tth_sEc2.7">
+2.7</A>&nbsp;&nbsp;Changing "Home"</H3>
+<tt>index.php</tt> creates a default menu entry "Home",
+which is the "Home" of the web site. If you 
+want to change this text, for example to "Home MyName",
+then you can use the command <tt>set_home_text('Some text')</tt>:
+
+<blockquote>
+
+<pre>
+set_home_text('H-PaGe Home');
+</pre>
+</blockquote>
+<p>
+      <H3><A NAME="tth_sEc2.8">
+2.8</A>&nbsp;&nbsp;Changing The Color</H3>
+<A NAME="sec: colors">
+</A>
+The contents of the web page must be structured.
+For example you should specify: "this is a link",
+"this is a header", etc. The colors and the fonts
+are automatically controlled by the means
+of "Cascaded Style Sheets" (CSS). They
+are given in a separate file. You can
+change the file with the CSS by using
+the command:
+
+<blockquote>
+
+<pre>
+set_style('file');
+</pre>
+</blockquote>
+<p>
+where  is the name of the file with CSS.
+There are several such files, which can
+be found in the distribution.  They have an extension
+"". You can get the decorations
+for the different color schemes from the web.
+The images are located in the subdirectory
+ of the distribution.
+
+<p>
+        <H2><A NAME="tth_sEc3">
+3</A>&nbsp;&nbsp;Keeping everything in one single directory</H2>
+<A NAME="sec: central">
+</A>
+
+<p>
+When new versions of 
+appear, you can update your web site
+by copying it to the respective directories.
+Alternatively, you can have only a
+single copy of THE "" in a
+single directory, and in each directory you can have
+a small file with the same name (""),
+with the following text:
+
+<br>
+<br>
+<br>
+
+<p>
+You must replace the path <tt>/home/sn/2www/hpage/</tt>  with the path to
+your own copy of  .
+
+<p>
+        <H2><A NAME="tth_sEc4">
+4</A>&nbsp;&nbsp;Additional Features</H2>
+<A NAME="sec: additional">
+</A>
+The additional features are available only at Øsrsted<font face=symbol>·</font
+>DTU. They
+include password protected directories and access to the publication
+database.
+
+<p>
+      <H3><A NAME="tth_sEc4.1">
+4.1</A>&nbsp;&nbsp;Accessing the publication database</H3>
+If <font face="helvetica">H-PaGe</font> opens a file with <tt>.php</tt> extension, it assumes
+that the file is a script that has to be executed. A php script
+is embedded in an HTML document like this:
+
+<pre>
+Normal html document ....
+&lt;?
+ PHP script - call commands from PHP
+?&#62;
+Normal html document again ....
+</pre>
+
+<p>
+<font face="helvetica">H-PaGe</font> provides a couple of useful function that you can use.
+Let's assume that you want to show your publications in the
+file <tt>publications.php</tt>. The file will contain a fragment
+of code like this:
+
+<pre>
+&lt;?
+   pubdb_page(12, "conference", 2002, "Svetoslav's Conference papers");
+?&#62;
+</pre>
+The function <tt>pubdb_page</tt> connects to the publication database
+of the department, retrieves the publications and displays them.
+The function is defined as:
+
+<pre>
+function pubdb_page($user_id=0, $type="all", $year="", $title="Publications")
+</pre>
+The inputs are <tt>user_id</tt>, <tt>type</tt>, <tt>year</tt>, and <tt>title</tt>.
+<tt>user_id</tt> is the identification of the user. You can see it when 
+you log in to the database. You can get your user ID either from 
+Allan Jørgen, <tt>aj@oersted.dtu.dk</tt>, or from Mogens Yndal Pedersen, <tt>myp@oersted.dtu.dk</tt>.
+The second parameter is the type of publications. It is a text string, 
+and get one of the following values:
+
+<DL compact>
+<dt><b></b></dt>
+	<dd>all  - Show all publications
+<dt><b></b></dt>
+	<dd>journal - Journal papers
+<dt><b></b></dt>
+	<dd>conference - Conference papers
+<dt><b></b></dt>
+	<dd>book - Book
+<dt><b></b></dt>
+	<dd>msc - MSc Thesis
+<dt><b></b></dt>
+	<dd>phd  - PhD Thesis
+<dt><b></b></dt>
+	<dd>report - Technical report
+<dt><b></b></dt>
+	<dd>notes - Lecture note
+<dt><b></b></dt>
+	<dd>software - Software
+<dt><b></b></dt>
+	<dd>misc -  Misc
+<dt><b></b></dt>
+	<dd>patent - Patent
+<dt><b></b></dt>
+	<dd>dsc - Doctor thesis
+</DL>
+<p>
+The third parameter is <tt>year</tt>. If you do not specify a year, then
+all years will be included. The final parameter title specifies
+the title that should stay above the publications. 
+The default value is "Publications".
+
+<p>
+If you want just to show a link to the publications database,
+then you can use the functon <tt>pubdb_link</tt>:
+
+<pre>
+function pubdb_link($user_id, $type, $year, $title, $link_text)
+</pre>
+The only new paramater is <tt>link_text</tt>, which is the text shown
+as a link in you page.
+
+<p>
+      <H3><A NAME="tth_sEc4.2">
+4.2</A>&nbsp;&nbsp;Password protection</H3>
+<A NAME="sec: password">
+</A>
+If you want to restrict the access to some of your files,
+you can add the command:
+
+<pre>
+&lt;?
+ allow_users('sn','jaj', .....);
+?&#62;
+</pre>
+to your <tt>web.config</tt> file. The users will have to log in with
+their login names for the web server.
+
+<p>
+
+<p><hr><small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 2.64.<br>On  8 Dec 2003, 11:56.</small>
+</HTML>

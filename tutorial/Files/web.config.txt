@@ -1,0 +1,12 @@
+<?
+  /* Comments are like in C, C++ or BASH*/
+  set_style('blue.css');    // Use the file "blue.css"
+
+  add_image('menu_line',   'pictures/line_blue.gif','line');
+  add_image('upperleft',   'pictures/decoration_ul_blue.gif', 'Decoration');
+  add_image('upperright',  'pictures/dtu_logo_ur_blue.png', 'DTU');
+  add_image('middleright', 'pictures/tutorial_logo_blue.png', 'Tutorial');
+  set_title('Tutorial: Create Home Pages with H-PaGe');
+
+?>
+

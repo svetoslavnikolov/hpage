@@ -1,0 +1,43 @@
+<head>
+<title>
+ H-PaGe Create Upper-Right Image
+</title>
+</head>
+
+<h1>Create Upper Right Image </h1>
+
+<br>
+<ol>
+	<li> Fill in the desired text.</li>
+	<li> Choose the desired color scheme.</li>
+	<li> Click on [SUBMIT].</li>
+	<li> Right-click on the image that you will get and select
+	     "Save Image As" from the menu.</li>
+</ol>
+
+<form name="adbook" enctype="multipart/form-data" action="create_logos/upperright_image.php" METHOD="POST">
+<table>
+	<tr><td><input type="hidden" name="MAX_FILE_SIZE" value="100000000"></td></tr>
+	<tr><td align="center" width=100% class="contents">
+	  <table class="contents">
+		<tr><td  align="right" width=20%>Text : </td><td style='width:75%'><input name="text" type="text" value = "T E C H N I C A L   U N I V E R S I T Y   O F   D E N M A R K" size="50" maxlength="150"></td></tr>
+			<tr><td  align="right" style="width=20%"> Section : </td>      <td style='width:75%'>	<select single name="colors[]">
+								 			<option value="green"> Green
+											<option value="red">  Red
+											<option value="blue"> Blue
+											<option value="cyan"> Cyan
+											<option value="brown"> Brown
+											<option value="lila"> Magenta
+											<option value="augreen"> AU-Green
+		
+	      					</select></td></tr>
+		<tr><td> <br> </td> </tr>
+	</table>
+	</td></tr>
+		<tr><td align="center" > <input name="submit" type="submit" value="Submit"><input name="submit" type="reset" value="Reset"> </td></tr>
+	</table>
+	</form>
+<br>
+<p>
+
+
